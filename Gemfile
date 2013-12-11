@@ -10,6 +10,7 @@ gem 'slim', '2.0.2'
 gem 'sass', '3.2.12'
 gem 'omniauth-twitter', '1.0.1'
 gem 'twitter'
+gem 'data_mapper'
 
 group :development, :test do
   gem 'pry'
