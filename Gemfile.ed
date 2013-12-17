@@ -1,0 +1,19 @@
+source "https://rubygems.org"
+ruby "2.0.0"
+gem 'sinatra'
+
+group :development, :test do
+	gem 'pry'
+	gem 'data_mapper'
+	gem 'sqlite3'
+	gem 'dm-sqlite-adapter'
+end
+
+gem 'slim'
+gem 'sass'
+gem 'omniauth-twitter'
+gem 'twitter'
+# gem 'pg'
+# gem 'dm-postgres-adapter'
+
+
