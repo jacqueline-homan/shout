@@ -3,7 +3,6 @@ GEM
   specs:
     addressable (2.3.5)
     atomic (1.1.14)
-    backports (3.3.5)
     bcrypt-ruby (3.1.2)
     better_errors (1.0.1)
       coderay (>= 1.0.0)
@@ -52,7 +51,7 @@ GEM
       uuidtools (~> 2.1)
     dm-validations (1.2.0)
       dm-core (~> 1.2.0)
-    equalizer (0.0.8)
+    equalizer (0.0.7)
     erubis (2.7.0)
     faraday (0.8.8)
       multipart-post (~> 1.2.0)
@@ -60,7 +59,7 @@ GEM
     hashie (2.0.5)
     http (0.5.0)
       http_parser.rb
-    http_parser.rb (0.5.3)
+    http_parser.rb (0.6.0)
     json (1.8.1)
     json_pure (1.8.1)
     memoizable (0.2.0)
@@ -83,25 +82,10 @@ GEM
       method_source (~> 0.8)
       slop (~> 3.4)
     rack (1.5.2)
-    rack-protection (1.5.1)
-      rack
-    rack-test (0.6.2)
-      rack (>= 1.0)
     sass (3.2.12)
     simple_oauth (0.2.0)
-    sinatra (1.4.4)
-      rack (~> 1.4)
-      rack-protection (~> 1.4)
-      tilt (~> 1.3, >= 1.3.4)
-    sinatra-contrib (1.4.2)
-      backports (>= 2.0)
-      multi_json
-      rack-protection
-      rack-test
-      sinatra (~> 1.4.0)
-      tilt (~> 1.3)
-    sinatra-reloader (1.0)
-      sinatra-contrib
+    sinatra (1.0)
+      rack (>= 1.0)
     slim (2.0.2)
       temple (~> 0.6.6)
       tilt (>= 1.3.3, < 2.1)
@@ -110,15 +94,15 @@ GEM
     temple (0.6.7)
     thread_safe (0.1.3)
       atomic
-    tilt (1.4.1)
-    twitter (5.1.1)
+    tilt (2.0.0)
+    twitter (5.2.0)
       addressable (~> 2.3)
       buftok (~> 0.2.0)
       descendants_tracker (~> 0.0.1)
-      equalizer (~> 0.0.7)
+      equalizer (~> 0.0.7, != 0.0.8)
       faraday (>= 0.8, < 0.10)
       http (~> 0.5.0)
-      http_parser.rb (~> 0.5.0)
+      http_parser.rb (~> 0.6.0)
       json (~> 1.8)
       memoizable (~> 0.2.0)
       simple_oauth (~> 0.2.0)
@@ -128,13 +112,12 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  better_errors (= 1.0.1)
-  binding_of_caller (= 0.7.2)
+  better_errors
+  binding_of_caller
   data_mapper
-  omniauth-twitter (= 1.0.1)
+  omniauth-twitter
   pry
-  sass (= 3.2.12)
-  sinatra (= 1.4.4)
-  sinatra-reloader (= 1.0.0)
-  slim (= 2.0.2)
+  sass
+  sinatra
+  slim
   twitter

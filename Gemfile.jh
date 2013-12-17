@@ -7,9 +7,15 @@ gem 'sass'
 gem 'omniauth-twitter'
 gem 'twitter'
 gem 'data_mapper'
+gem 'rack-coffee'
+gem 'coffee-script'
 
 group :development, :test do
   gem 'pry'
   gem 'better_errors'
   gem 'binding_of_caller'
+  gem 'sqlite3'
+  gem 'dm-sqlite-adapter'
 end
+
+
